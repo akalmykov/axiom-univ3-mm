@@ -1,18 +1,14 @@
 ## axiom-univ3-mm
 
-## Run start off-chain
-
 RUST_BACKTRACE=1 LOOKUP_BITS=19 cargo run --example univ3_mm -- --name univ3_mm --degree 20 keygen
 RUST_BACKTRACE=1 LOOKUP_BITS=19 cargo run --example univ3_mm -- --name univ3_mm --degree 20 prove
 RUST_BACKTRACE=1 LOOKUP_BITS=19 cargo run --example univ3_mm -- --name univ3_mm --degree 20 verify
 RUST_BACKTRACE=1 LOOKUP_BITS=19 cargo run --example univ3_mm -- --name univ3_mm --degree 20 evm
 RUST_BACKTRACE=1 LOOKUP_BITS=19 cargo run --example univ3_mm -- --name univ3_mm --degree 20 mock
 
-### Execute strat on-chain
+### Demo
 
 `source .env && forge script script/DummyVault.s.sol:RunStrat --rpc-url $GOERLI_RPC_URL --broadcast --ffi -vvv`
-
-## Demo setup
 
 `0xdaa6cd220b7d14c33500f6c60197d2212e75f5a0b525ff7bf6a8661aa4e461730xdaa6cd220b7d14c33500f6c60197d2212e75f5a0b525ff7bf6a8661aa4e46173`
 
